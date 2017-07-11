@@ -31,6 +31,7 @@
             android:hint="Type a messege"
             android:background="@drawable/border_widgets"
             android:padding="10dp"
+            android:imeActionId="@+id/send"
             android:id="@+id/enter_send_text"/>
 
         <Button
