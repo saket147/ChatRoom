@@ -15,6 +15,7 @@ ADDED from /home/saket/ChatRoom/app/src/main/AndroidManifest.xml:2:1-22:12
 		INJECTED from /home/saket/ChatRoom/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from /home/saket/ChatRoom/app/src/main/AndroidManifest.xml:4:5-66
+MERGED from [com.koushikdutta.async:androidasync:2.2.1] /home/saket/.android/build-cache/2ba27e1815cf465693a461b794aa843dde455bc7/output/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /home/saket/ChatRoom/app/src/main/AndroidManifest.xml:4:22-64
 application
@@ -30,6 +31,7 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/saket
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/saket/.android/build-cache/217450aaaf9c400489038adcc23baaaee2cb671a/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/saket/.android/build-cache/6c5499768af8be4eb752ed26519bff5101d942c7/output/AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /home/saket/.android/build-cache/b0e6050eb8f0bdcbfcc3befb7f98deabaa84934a/output/AndroidManifest.xml:26:5-20
+MERGED from [com.koushikdutta.async:androidasync:2.2.1] /home/saket/.android/build-cache/2ba27e1815cf465693a461b794aa843dde455bc7/output/AndroidManifest.xml:13:5-14:19
 	android:label
 		ADDED from /home/saket/ChatRoom/app/src/main/AndroidManifest.xml:9:9-41
 	android:supportsRtl
@@ -70,6 +72,7 @@ MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/saket/.and
 MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/saket/.android/build-cache/217450aaaf9c400489038adcc23baaaee2cb671a/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/saket/.android/build-cache/6c5499768af8be4eb752ed26519bff5101d942c7/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /home/saket/.android/build-cache/b0e6050eb8f0bdcbfcc3befb7f98deabaa84934a/output/AndroidManifest.xml:20:5-44
+MERGED from [com.koushikdutta.async:androidasync:2.2.1] /home/saket/.android/build-cache/2ba27e1815cf465693a461b794aa843dde455bc7/output/AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion

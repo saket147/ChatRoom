@@ -29,4 +29,5 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:recyclerview-v7:26.0.+'
     compile 'com.android.support:cardview-v7:26.0.+'
+    compile 'com.koushikdutta.async:androidasync:2.+'
 }
