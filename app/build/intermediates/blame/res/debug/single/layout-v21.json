@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/layout-v21/notification_template_custom_big.xml"
+    }
+]

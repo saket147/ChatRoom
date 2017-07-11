@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

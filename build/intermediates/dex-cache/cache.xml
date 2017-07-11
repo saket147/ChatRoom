@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/saket/ChatRoom/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="f1555d230a1c445208d619b5d729e6e83e3813e9">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_397e9c9c936cdfde7f572805ecf7155d099455f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/saket/ChatRoom/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9b2ee53a18b2485b9173e658f63d608bbaf64f32/classes.dex" />
+    </item>
+
+</items>

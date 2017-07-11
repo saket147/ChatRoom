@@ -1,0 +1,4 @@
+#Tue Jul 11 01:24:34 IST 2017
+base.0=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5
+renamed.0=classes.dex
+file.0=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex

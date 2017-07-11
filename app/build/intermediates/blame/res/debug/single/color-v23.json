@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/saket/.android/build-cache/0d60cb54e369cbc62f57562b1c3c06cb5dd06b7a/output/res/color-v23/abc_tint_switch_thumb.xml"
+    }
+]

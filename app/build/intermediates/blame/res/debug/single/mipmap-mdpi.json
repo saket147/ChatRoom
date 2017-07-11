@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/home/saket/ChatRoom/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/saket/ChatRoom/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/saket/ChatRoom/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    }
+]

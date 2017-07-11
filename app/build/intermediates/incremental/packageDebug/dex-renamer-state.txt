@@ -1,0 +1,7 @@
+#Tue Jul 11 01:24:34 IST 2017
+base.0=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_397e9c9c936cdfde7f572805ecf7155d099455f2
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9b2ee53a18b2485b9173e658f63d608bbaf64f32/classes.dex
+base.1=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9b2ee53a18b2485b9173e658f63d608bbaf64f32
+file.0=/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_397e9c9c936cdfde7f572805ecf7155d099455f2/classes.dex
