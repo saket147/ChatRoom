@@ -6,36 +6,36 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1499851974925"
+    timestamp="1499883409503"
     token="6713240706021197880"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="70" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="15" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
-    <artifact
-        location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-        type="SPLIT" />
     <artifact
         location="/home/saket/ChatRoom/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1499850593912"
+        timestamp="1499883355484"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/saket/ChatRoom/app/build/outputs/apk/app-debug.apk"
@@ -48,9 +48,6 @@
             type="SPLIT" />
         <artifact
             location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
-            type="SPLIT" />
-        <artifact
-            location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
             location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
@@ -73,19 +70,8 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1499851814907"
+        timestamp="1499883409503"
         verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/saket/ChatRoom/app/build/outputs/apk/app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1499851974925"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="/home/saket/ChatRoom/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
-            type="SPLIT" />
         <artifact
             location="/home/saket/ChatRoom/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />

@@ -5,6 +5,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.ArrayList;
 
@@ -43,6 +44,7 @@ public class MessegeAdapter extends RecyclerView.Adapter<MessegeAdapter.MyViewHo
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView receivedText;
         TextView timeStamps;
+        ImageView imageView;
         public MyViewHolder(View view){
             super(view);
             receivedText = (TextView)view.findViewById(R.id.received_text);

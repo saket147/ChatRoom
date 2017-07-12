@@ -7,8 +7,62 @@
         jumboMode="true"
         optimize="true"
         revision="26.0.0"
-        sha1="e1e30a3a004285151c43f78f09df1f831a7048ec">
+        sha1="a1501ab5732188023adad400dcee4856b3fb4103">
         <dex dex="/home/saket/ChatRoom/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_397e9c9c936cdfde7f572805ecf7155d099455f2/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp-ws/2.7.0/ea871498d28a10d7c803c583b6b87fd74f4c6347/okhttp-ws-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ea871498d28a10d7c803c583b6b87fd74f4c6347">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/okhttp-ws-2.7.0_ebfc6409cc8267f12ff97773f93da1d5ce6d1bfe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.gradle/caches/modules-2/files-2.1/io.socket/socket.io-client/0.6.3/19b9fade3a6de2bdd416ee9df728cb19f6c7da1d/socket.io-client-0.6.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="19b9fade3a6de2bdd416ee9df728cb19f6c7da1d">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/socket.io-client-0.6.3_a17fdebcf47e6cc1e637ecae8840972d60703c70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp/okhttp/2.7.0/1477ec5caf8319ab4b51eb43553cd66aa86fdea5/okhttp-2.7.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1477ec5caf8319ab4b51eb43553cd66aa86fdea5">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/okhttp-2.7.0_2922fb4db657da861b0c213a93499187e28e16d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.gradle/caches/modules-2/files-2.1/io.socket/engine.io-client/0.6.3/e3a26ee85fffb429bac318311a8ea1d85f5b9e13/engine.io-client-0.6.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e3a26ee85fffb429bac318311a8ea1d85f5b9e13">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/engine.io-client-0.6.3_be9ed65a0130aed6bbc712f0cc50e851cd182970.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.android/build-cache/b0e6050eb8f0bdcbfcc3befb7f98deabaa84934a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/classes_d8dcdba401df8d5d2b5f59d250804b8745e616cf.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/saket/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.6.0/98476622f10715998eacf9240d6b479f12c66143/okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="/home/saket/ChatRoom/app/build/intermediates/pre-dexed/debug/okio-1.6.0_763c49ea9ea26fa612e98acc9a4b1d68126d6534.jar" />
     </item>
     <item
         is-multidex="true"

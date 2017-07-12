@@ -6,5 +6,5 @@ package play.sokanch.com.chatroom;
 
 public class Constraints {
 
-    public static final String URL_WEBSOCKET = "http://dev-socket.clutto.com:3009/";
+    public static final String URL_SOCKET = "http://dev-socket.clutto.com:3009/";
 }

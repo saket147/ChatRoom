@@ -3,7 +3,7 @@
     package="play.sokanch.com.chatroom.test" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="15"
         android:targetSdkVersion="26" />
 
     <instrumentation

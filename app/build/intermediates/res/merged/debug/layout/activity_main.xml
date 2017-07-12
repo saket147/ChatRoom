@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#34495e"
     tools:context="play.sokanch.com.chatroom.MainActivity">
 
 
@@ -22,25 +23,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         android:padding="5sp"
         android:weightSum="1"
-        android:background="@drawable/border_widgets"
+        android:background="#ffffff"
         android:id="@+id/linearLayout">
         <EditText
             android:layout_width="260dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.67"
+            android:layout_weight="0.70"
             android:hint="Type a messege"
-            android:background="@drawable/border_widgets"
-            android:padding="10dp"
             android:imeActionId="@+id/send"
+            android:backgroundTint="#9E9E9E"
             android:id="@+id/enter_send_text"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/border_widgets"
-            android:text="SEND" />
+            android:background="@android:drawable/ic_menu_send"
+            android:layout_weight="0.30" />
+        />
 
     </LinearLayout>
 

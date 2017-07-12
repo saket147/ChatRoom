@@ -1494,6 +1494,10 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="MyCardViewStyle" parent="Theme.AppCompat.Light">
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">2dp</item>
+    </style>
     <style name="Platform.AppCompat" parent="android:Theme">
         <item name="android:windowNoTitle">true</item>
 

@@ -15,7 +15,7 @@ public class ChatRoomApplication extends Application{
     private Socket mSocket;
     {
         try {
-            mSocket = IO.socket(Constraints.URL_WEBSOCKET);
+            mSocket = IO.socket(Constraints.URL_SOCKET);
         } catch (URISyntaxException e) {
             throw new RuntimeException(e);
         }
