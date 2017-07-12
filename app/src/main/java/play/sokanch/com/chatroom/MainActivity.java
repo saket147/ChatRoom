@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
@@ -15,9 +16,13 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.net.URISyntaxException;
 import java.util.ArrayList;
 
+import io.socket.client.Ack;
 import io.socket.client.IO;
 import io.socket.client.Socket;
 import io.socket.emitter.Emitter;
@@ -28,47 +33,31 @@ public class MainActivity extends AppCompatActivity {
     Button send;
     RecyclerView msgRecyclerView;
     private ArrayList<Chats> chatsArrayList;
-    String ts;
+    private String ts;
     private Socket socket;
-    private Context context;
+    private Chats chats;
 
 
-    {
-        try {
-            socket = IO.socket(Constraints.URL_WEBSOCKET);
-        }catch (URISyntaxException e){
-            throw new RuntimeException(e);
-        }
-    }
-
-    private Utils utils;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ChatRoomApplication app = (ChatRoomApplication) this.getApplication();
+        socket = app.getSocket();
         send = (Button)findViewById(R.id.button3);
         enterMsg = (EditText) findViewById(R.id.enter_send_text);
         msgRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        Long tsLong = System.currentTimeMillis()/1000;
-        ts = tsLong.toString();
-        context = getApplicationContext();
-
         socket.on(Socket.EVENT_CONNECT_ERROR, onConnectError);
         socket.on(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
-        socket.on("new Messege", onNewMessege);
+        socket.on(Socket.EVENT_CONNECT,onConnect);
+        socket.on(Socket.EVENT_DISCONNECT,onDisconnect);
+        socket.on("rcv_msg", onNewMessege);
 
-        enterMsg.setOnEditorActionListener(new TextView.OnEditorActionListener() {
-            @Override
-            public boolean onEditorAction(TextView textView, int i, KeyEvent keyEvent) {
-                if (i == R.id.send || i == EditorInfo.IME_NULL){
-                    attempSend();
-                    return false;
-                }
-                return false;
-            }
-        });
+        socket.connect();
 
-        utils = new Utils(getApplicationContext());
+
+
+
         chatsArrayList = new ArrayList<>();
         send.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,10 +71,40 @@ public class MainActivity extends AppCompatActivity {
         adapter = new MessegeAdapter(chatsArrayList);
         msgRecyclerView.setAdapter(adapter);
     }
+    private Emitter.Listener onDisconnect = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    Toast.makeText(MainActivity.this,
+                            "Disconnected", Toast.LENGTH_LONG).show();
+                }
+            });
+        }
+    };
+    private Emitter.Listener onConnect = new Emitter.Listener() {
+        @Override
+        public void call(Object... args) {
+            MainActivity.this.runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                        Toast.makeText(MainActivity.this,
+                                "Connect", Toast.LENGTH_LONG).show();
+
+                    }
+                }
+            );
+        }
+    };
     public void attempSend(){
         if (!socket.connected()){
             Toast.makeText(MainActivity.this, "Socket not connected", Toast.LENGTH_SHORT).show();
             return;
+        }
+        else{
+            Toast.makeText(MainActivity.this, "Socket connected", Toast.LENGTH_SHORT).show();
+
         }
         String messege = enterMsg.getText().toString().trim();
         if (TextUtils.isEmpty(messege)){
@@ -93,12 +112,28 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
         enterMsg.setText("");
-        addMessege(messege, ts);
-        socket.emit("chat", messege, ts);
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put("txt",messege);
+            socket.emit("send_msg", jsonObject, new Ack() {
+                @Override
+                public void call(Object... args) {
+                    Log.d("Ack received",args.toString());
+                    JSONObject jsonObject = (JSONObject) args[0];
+                    Log.d("Ack received",jsonObject.toString());
+
+                }
+            });
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
     }
     public void addMessege(String messege, String timeStamp){
-        chatsArrayList.add(new Chats(enterMsg.getText().toString(), ts));
+        chats=new Chats(messege, timeStamp);
+        chatsArrayList.add(chats);
         adapter.notifyItemInserted(chatsArrayList.size() - 1);
+        //adapter.notifyDataSetChanged();
         scrollToBottom();
     }
     private void scrollToBottom() {
@@ -121,16 +156,22 @@ public class MainActivity extends AppCompatActivity {
     private Emitter.Listener onNewMessege = new Emitter.Listener() {
         @Override
         public void call(final Object... args) {
+
+            Log.d("Args ","Args "+args.toString());
             MainActivity.this.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    String messege = (String) args[0];
-                    String timeStamp = (String)args[1];
-
-                    addMessege(messege, timeStamp);
-                }
-            });
-        }
+                    Log.d("Args ","Args "+args.toString());
+            JSONObject jsonObject = (JSONObject) args[0];
+            Log.d("JSON Object ","JSON "+jsonObject+"  length"+args.length);
+            Log.d("JSON Object ","JSON "+jsonObject.toString());
+                    try {
+                        addMessege(jsonObject.getString("txt"),jsonObject.getLong("timestamp")+"");
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                }});
+            }
     };
 
     @Override
@@ -139,6 +180,8 @@ public class MainActivity extends AppCompatActivity {
         socket.disconnect();
         socket.off(Socket.EVENT_CONNECT_ERROR, onConnectError);
         socket.off(Socket.EVENT_CONNECT_TIMEOUT, onConnectError);
-        socket.off("new Messege", onNewMessege);
+        socket.off(Socket.EVENT_DISCONNECT,onDisconnect);
+        socket.off("rcv_msg", onNewMessege);
     }
+
 }
